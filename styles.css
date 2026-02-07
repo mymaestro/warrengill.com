@@ -375,14 +375,12 @@ body {
     padding: 0.75rem 1rem;
     background: #F5F1ED;
     border-radius: 5px;
-    border-left: 4px solid var(--primary);
     transition: all 0.3s ease;
     user-select: none;
 }
 
 .section-header:hover {
     background: #EDE7E0;
-    border-left-width: 6px;
 }
 
 .section-header h4 {
@@ -430,7 +428,6 @@ body {
     list-style: none;
     margin-top: 0.5rem;
     padding-left: 1rem;
-    border-left: 3px solid var(--primary);
     animation: fadeInUp 0.3s ease-out;
 }
 
