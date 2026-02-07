@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warren Gill - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSection(header) {
+            const section = header.closest('.expandable-section');
+            const content = section.querySelector('.section-content');
+            const icon = header.querySelector('.toggle-icon');
+            
+            if (content.style.display === 'none' || !content.style.display) {
+                content.style.display = 'block';
+                icon.textContent = '▲';
+                header.classList.add('expanded');
+            } else {
+                content.style.display = 'none';
+                icon.textContent = '▼';
+                header.classList.remove('expanded');
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="resume.html" class="nav-link active">Resume</a>
+        <a href="cover-letter.html" class="nav-link">Cover Letter</a>
+    </nav>
+    
+    <div class="container resume-container">
+        <header class="resume-header">
+            <img src="wg-selfie.png" alt="Warren Gill" class="profile-photo">
+            <h1>WARREN GILL</h1>
+            <p class="tagline">Senior Curriculum Developer | Technical Leader | AI Innovation Specialist</p>
+	    <p class="contact-info">
+                <a href="https://www.linkedin.com/in/mymaestro/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    linkedin.com/in/mymaestro
+                </a>
+            </p>
+        </header>
+
+        <section class="resume-section">
+            <h2>Professional Summary</h2>
+            <p>Senior Curriculum Developer with deep technical expertise spanning instructional design, software development, and AI-powered automation. Proven track record of building scalable tools and infrastructure that transform content creation workflows while maintaining exceptional quality standards.</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Core Competencies</h2>
+            <div class="competencies-grid">
+                <div class="competency-card">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li><strong>Software Development:</strong> Bash, Python, JavaScript, automation frameworks, API integration</li>
+			<li><strong>AWS Services:</strong> AI, Compute, Containers, Developer, IoT, Migration, Network, Storage</li>
+                        <li><strong>Development Tools:</strong> Git, MCP (Model Context Protocol), SVG generation, video/image generation</li>
+                    </ul>
+                </div>
+                <div class="competency-card">
+                    <h3>Curriculum & Design</h3>
+                    <ul>
+                        <li><strong>Instructional Design:</strong> Learning experience design, accessibility compliance, content architecture</li>
+                        <li><strong>Rapid Development:</strong> Workflow optimization, accelerated course production, generative AI integration</li>
+                        <li><strong>Quality Assurance:</strong> Technical accuracy validation, style guide compliance, learner-centered design</li>
+                    </ul>
+                </div>
+                <div class="competency-card">
+                    <h3>Leadership & Operations</h3>
+                    <ul>
+                       <li><strong>Product Management:</strong> Stakeholder coordination, feature prioritization, cross-functional alignment</li>
+                       <li><strong>Process Innovation:</strong> Automation development, efficiency optimization, scalable solutions</li>
+                       <li><strong>Knowledge Transfer:</strong> Mentorship, documentation, organizational learning initiatives</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>Amazon Web Services (AWS)</h3>
+                        <p class="job-title">Senior Curriculum Developer</p>
+                        <p class="job-subtitle">Leading cloud services provider offering scalable computing, storage, and AI/ML solutions</p>
+                    </div>
+                    <p class="job-date">2018 - Present</p>
+                </div>
+                
+                <div class="expandable-section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h4>AI-Powered Content Infrastructure <span class="toggle-icon">▼</span></h4>
+                    </div>
+                    <ul class="section-content" style="display: none;">
+                        <li>Built MCP systems integrating AWS Bedrock and image recognition for natural language icon discovery, enabling intuitive content creation workflows</li>
+                        <li>Developed comprehensive content generation utilities including SVG diagram generation, video and image generation with Amazon models (Nova, Canvas, Titan), and Markdown-to-YAML conversion tools</li>
+                        <li>Implemented generative AI solutions across training initiatives, starting with Cloud Operations Associate training and scaling to organization-wide adoption</li>
+                    </ul>
+                </div>
+                
+                <div class="expandable-section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h4>Accelerated Course Development <span class="toggle-icon">▼</span></h4>
+                    </div>
+                    <ul class="section-content" style="display: none;">
+                        <li>Led professional generative AI developer project delivering 19 courses in weeks, reducing typical development timelines by 70%+ while maintaining quality standards</li>
+                        <li>Created Python-based content migration tool converting Articulate Rise exports to clean Markdown, streamlining content updates and improving maintainability</li>
+                        <li>Maintained Rise Course Report tool with automated accessibility checks, serving as invaluable asset for training and curriculum teams</li>
+                    </ul>
+                </div>
+                
+                <div class="expandable-section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h4>Product Management & Technical Leadership <span class="toggle-icon">▼</span></h4>
+                    </div>
+                    <ul class="section-content" style="display: none;">
+                        <li>Served as Product Manager for building a Learning Products Authoring system (Levitate Studio), coordinating cross-functional teams and guiding feature development from concept through implementation</li>
+                        <li>Demonstrated versatility by contributing both strategic direction and hands-on development work, including programming and UX design</li>
+                        <li>Proactively documented product vision and integration strategies, facilitating alignment across engineering, content, and stakeholder teams</li>
+                    </ul>
+                </div>
+                
+                <div class="expandable-section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h4>Knowledge Sharing & Organizational Impact <span class="toggle-icon">▼</span></h4>
+                    </div>
+                    <ul class="section-content" style="display: none;">
+                        <li>Designed and delivered several Lunch & Learn Sessions reaching over 200 colleagues each, demonstrating strong knowledge retention and application across the training community</li>
+                        <li>Led accessibility research group, brainstorming and creating automated solutions that simplified compliance processes organization-wide</li>
+                        <li>Mentored team members on technical approaches, process improvements, and innovative curriculum development strategies</li>
+                    </ul>
+                </div>
+                
+                <div class="expandable-section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h4>Operational Excellence <span class="toggle-icon">▼</span></h4>
+                    </div>
+                    <ul class="section-content" style="display: none;">
+                        <li>Maintained consistent project velocity through active participation in technical sprint reviews and agile ceremonies</li>
+                        <li>Ensured accurate project tracking and administrative excellence supporting effective organizational planning</li>
+                        <li>Balanced multiple initiatives while maintaining focus on user-centric outcomes and customer value</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>HCL Technologies</h3>
+                        <p class="job-title">Technical Courseware Developer</p>
+                    </div>
+                    <p class="job-date">2016 - 2018</p>
+                </div>
+                <ul>
+                    <li>Developed technical training content for IT service management solutions</li>
+                    <li>Collaborated with global development teams to ensure technical accuracy</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3>IBM Corporation</h3>
+                        <p class="job-title">Technical Enablement Developer & Managing Consultant</p>
+                    </div>
+                    <p class="job-date">2008 - 2016</p>
+                </div>
+                <ul>
+                    <li>Designed training for IBM Workload Automation suite</li>
+                    <li>Provided technical consulting for enterprise automation solutions</li>
+                    <li>Delivered technical presentations at workshops and conferences</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Education & Certifications</h2>
+            <div class="education-grid">
+                <div>
+                    <h4>Education</h4>
+                    <p>Bachelor of Music, Music Education</p>
+                    <p>Graduate coursework in Computer Science</p>
+                </div>
+                <div>
+                    <h4>AWS Certifications</h4>
+                    <ul>
+                        <li>AWS Certified AI Practitioner</li>
+                        <li>AWS Certified Solutions Architect - Associate</li>
+                        <li>AWS Certified Cloud Practitioner</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

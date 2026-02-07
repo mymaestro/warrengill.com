@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warren Gill - Cover Letter Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="cover-letter.html" class="nav-link active">Cover Letter</a>
+    </nav>
+    
+    <div class="container cover-letter-container">
+        <div class="form-section">
+            <img src="wg-selfie.png" alt="Warren Gill" class="profile-photo">
+            <h1>Cover Letter Generator</h1>
+            <p class="form-description">Fill in the details to generate a customized cover letter</p>
+            
+            <form id="coverLetterForm">
+                <div class="form-group">
+                    <label for="hiringManager">Hiring Manager Name</label>
+                    <input type="text" id="hiringManager" placeholder="e.g., Jane Smith">
+                </div>
+                
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" placeholder="e.g., Tech Innovations Inc." required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="positionTitle">Position Title</label>
+                    <input type="text" id="positionTitle" placeholder="e.g., Senior Technical Writer" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="yearsExperience">Years of Experience</label>
+                    <input type="number" id="yearsExperience" value="15" min="1" max="50">
+                </div>
+                
+                <div class="form-group">
+                    <label for="customValue">Custom Value Proposition (Optional)</label>
+                    <textarea id="customValue" rows="4" placeholder="Add specific details about how your experience addresses this company's needs..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="narrativeStyle">Narrative Style</label>
+                    <select id="narrativeStyle">
+                        <option value="standard">Standard Professional</option>
+                        <option value="innovation">Innovation-Focused</option>
+                        <option value="technical">Technical Depth</option>
+                        <option value="collaboration">Collaboration-Focused</option>
+                        <option value="impact">Impact-Driven</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Generate Cover Letter</button>
+            </form>
+        </div>
+        
+        <div class="preview-section">
+            <div class="preview-header">
+                <h2>Preview</h2>
+                <button id="copyBtn" class="btn btn-secondary" style="display: none;">Copy to Clipboard</button>
+            </div>
+            <div id="letterPreview" class="letter-preview">
+                <p class="placeholder-text">Fill out the form to generate your cover letter</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="cover-letter.js"></script>
+</body>
+</html>
