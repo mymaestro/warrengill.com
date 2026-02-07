@@ -7,7 +7,7 @@ const narratives = {
     
     impact: "Results matter. In recent curriculum development projects, I implemented generative AI that helped deliver 19 courses in weeks, cutting typical timelines by over 70% while maintaining quality. I built a digital course content inspector that flags grammar and inclusive language issues, surfaces accessibility gaps, and produces reports that make publishing faster and more reliable. I focus on outcomes that create lasting value.",
     
-    standard: "Throughout my career, I've been motivated by creative, engaging projects with clear goals and room for innovation. I advocate for simple, effective design over unnecessary complexity. The best solutions are often the most elegant ones."
+    standard: "I'm motivated by creative, engaging projects with clear goals and room for innovation. I advocate for simple, effective design over unnecessary complexity. The best solutions are often the most elegant ones."
 };
 
 document.getElementById('coverLetterForm').addEventListener('submit', function(e) {
