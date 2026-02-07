@@ -6,7 +6,7 @@
     <title>Warren Gill - Résumé</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script>
         function toggleSection(header) {
@@ -34,59 +34,71 @@
     </nav>
     
     <div class="container resume-container">
-        <header class="resume-header">
-            <img src="wg-selfie.png" alt="Warren Gill" class="profile-photo">
-            <h1>WARREN GILL</h1>
-            <p class="tagline">Senior Curriculum Developer | Technical Leader | AI Innovation Specialist</p>
-	    <p class="contact-info">
-                <a href="https://www.linkedin.com/in/mymaestro/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    linkedin.com/in/mymaestro
-                </a>
-            </p>
-        </header>
-
-        <section class="resume-section">
-            <h2>Professional Summary</h2>
-            <p>Senior Curriculum Developer with deep technical expertise spanning instructional design, software development, and AI-powered automation. Proven track record of building scalable tools and infrastructure that transform content creation workflows while maintaining exceptional quality standards.</p>
-        </section>
-
-        <section class="resume-section">
-            <h2>Core Competencies</h2>
-            <div class="competencies-grid">
-                <div class="competency-card">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li><strong>Software Development:</strong> Bash, Python, JavaScript, automation frameworks, API integration</li>
-			<li><strong>AWS Services:</strong> AI, Compute, Containers, Developer, IoT, Migration, Network, Storage</li>
-                        <li><strong>Development Tools:</strong> Git, MCP (Model Context Protocol), SVG generation, video/image generation</li>
-                    </ul>
+        <div class="resume-layout">
+            <aside class="resume-left">
+                <div class="resume-portrait">
+                    <img src="wg-selfie.png" alt="Warren Gill" class="profile-photo">
+                    <div class="name-block">
+                        <p class="name-kicker">Senior Curriculum Developer</p>
+                        <h1>WARREN GILL</h1>
+                    </div>
                 </div>
-                <div class="competency-card">
-                    <h3>Curriculum & Design</h3>
-                    <ul>
-                        <li><strong>Instructional Design:</strong> Learning experience design, accessibility compliance, content architecture</li>
-                        <li><strong>Rapid Development:</strong> Workflow optimization, accelerated course production, generative AI integration</li>
-                        <li><strong>Quality Assurance:</strong> Technical accuracy validation, style guide compliance, learner-centered design</li>
-                    </ul>
-                </div>
-                <div class="competency-card">
-                    <h3>Leadership & Operations</h3>
-                    <ul>
-                       <li><strong>Product Management:</strong> Stakeholder coordination, feature prioritization, cross-functional alignment</li>
-                       <li><strong>Process Innovation:</strong> Automation development, efficiency optimization, scalable solutions</li>
-                       <li><strong>Knowledge Transfer:</strong> Mentorship, documentation, organizational learning initiatives</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <section class="resume-section">
-            <h2>Professional Experience</h2>
-            
-            <div class="job">
+                <section class="resume-section resume-section-left">
+                    <h2>Professional Summary</h2>
+                    <p>Senior Curriculum Developer with deep technical expertise spanning instructional design, software development, and AI-powered automation. Proven track record of building scalable tools and infrastructure that transform content creation workflows while maintaining exceptional quality standards.</p>
+                </section>
+
+                <section class="resume-section resume-section-left">
+                    <h2>Core Competencies</h2>
+                    <div class="competencies-grid">
+                        <div class="competency-card">
+                            <h3>Technical Skills</h3>
+                            <ul>
+                                <li><strong>Software Development:</strong> Bash, Python, JavaScript, automation frameworks, API integration</li>
+                                <li><strong>AWS Services:</strong> AI, Compute, Containers, Developer, IoT, Migration, Network, Storage</li>
+                                <li><strong>Development Tools:</strong> Git, MCP (Model Context Protocol), SVG generation, video/image generation</li>
+                            </ul>
+                        </div>
+                        <div class="competency-card">
+                            <h3>Curriculum & Design</h3>
+                            <ul>
+                                <li><strong>Instructional Design:</strong> Learning experience design, accessibility compliance, content architecture</li>
+                                <li><strong>Rapid Development:</strong> Workflow optimization, accelerated course production, generative AI integration</li>
+                                <li><strong>Quality Assurance:</strong> Technical accuracy validation, style guide compliance, learner-centered design</li>
+                            </ul>
+                        </div>
+                        <div class="competency-card">
+                            <h3>Leadership & Operations</h3>
+                            <ul>
+                               <li><strong>Product Management:</strong> Stakeholder coordination, feature prioritization, cross-functional alignment</li>
+                               <li><strong>Process Innovation:</strong> Automation development, efficiency optimization, scalable solutions</li>
+                               <li><strong>Knowledge Transfer:</strong> Mentorship, documentation, organizational learning initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="resume-right">
+                <header class="resume-header">
+                    <div>
+                        <p class="tagline">Technical Leader | AI Innovation Specialist</p>
+                        <p class="contact-info">
+                            <a href="https://www.linkedin.com/in/mymaestro/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                                linkedin.com/in/mymaestro
+                            </a>
+                        </p>
+                    </div>
+                </header>
+
+                <section class="resume-section">
+                    <h2>Professional Experience</h2>
+
+                    <div class="job">
                 <div class="job-header">
                     <div>
                         <h3>Amazon Web Services (AWS)</h3>
@@ -182,24 +194,26 @@
             </div>
         </section>
 
-        <section class="resume-section">
-            <h2>Education & Certifications</h2>
-            <div class="education-grid">
-                <div>
-                    <h4>Education</h4>
-                    <p>Bachelor of Music, Music Education</p>
-                    <p>Graduate coursework in Computer Science</p>
-                </div>
-                <div>
-                    <h4>AWS Certifications</h4>
-                    <ul>
-                        <li>AWS Certified AI Practitioner</li>
-                        <li>AWS Certified Solutions Architect - Associate</li>
-                        <li>AWS Certified Cloud Practitioner</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                <section class="resume-section">
+                    <h2>Education & Certifications</h2>
+                    <div class="education-grid">
+                        <div>
+                            <h4>Education</h4>
+                            <p>Bachelor of Music, Music Education</p>
+                            <p>Graduate coursework in Computer Science</p>
+                        </div>
+                        <div>
+                            <h4>AWS Certifications</h4>
+                            <ul>
+                                <li>AWS Certified AI Practitioner</li>
+                                <li>AWS Certified Solutions Architect - Associate</li>
+                                <li>AWS Certified Cloud Practitioner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 </html>
