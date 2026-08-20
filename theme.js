@@ -1,12 +1,7 @@
-const themes = {
-    light: 'https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css',
-    dark: 'https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css'
-};
-
 const themeLink = document.getElementById('bootstrapTheme');
 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
 const savedPreference = localStorage.getItem('siteTheme');
-const preference = savedPreference === 'flatly' ? 'light' : savedPreference === 'darkly' ? 'dark' : savedPreference || 'dark';
+const preference = ['light', 'dark', 'auto'].includes(savedPreference) ? savedPreference : 'auto';
 
 function getEffectiveTheme(selectedPreference) {
     if (selectedPreference === 'auto') {
@@ -19,7 +14,7 @@ function getEffectiveTheme(selectedPreference) {
 function applyTheme(selectedPreference) {
     const validPreference = ['light', 'dark', 'auto'].includes(selectedPreference) ? selectedPreference : 'dark';
     const effectiveTheme = getEffectiveTheme(validPreference);
-    themeLink.href = themes[effectiveTheme];
+    document.documentElement.setAttribute('data-bs-theme', effectiveTheme);
     themeLink.dataset.preference = validPreference;
     themeLink.dataset.theme = effectiveTheme;
 
