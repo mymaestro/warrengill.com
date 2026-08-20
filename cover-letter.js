@@ -52,7 +52,9 @@ document.getElementById('coverLetterForm').addEventListener('submit', function(e
     `;
     
     document.getElementById('letterPreview').innerHTML = letter;
-    document.getElementById('copyBtn').style.display = 'block';
+    document.getElementById('modalLetterPreview').innerHTML = letter;
+    document.getElementById('copyBtn').classList.remove('d-none');
+    document.getElementById('openModalBtn').classList.remove('d-none');
 });
 
 document.getElementById('copyBtn').addEventListener('click', function() {
